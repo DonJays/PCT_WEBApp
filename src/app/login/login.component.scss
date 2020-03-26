@@ -1,0 +1,56 @@
+.bg-img {
+  background: url(../../assets/images/Bitmap.png) center no-repeat;
+  height: 507px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+img{
+  position: absolute;
+  top: 45%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 72px;
+}
+
+#login {
+  margin: 0 auto;
+  width: 50%;
+}
+
+
+
+.fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+
+.container {
+  padding: 10px;
+  top: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.row {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  padding: 20% 10%;
+}
+
+.form-element {
+  padding: 5px 0px 25px 2px;
+  width: 100%;
+}

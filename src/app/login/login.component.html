@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+    <div class="bg-img col-md-6">
+      <img src="../../assets/images/logo copy.png" alt="logocopy" />
+    </div>
+    <div class="col-md-6">
+      <form
+        [formGroup]="loginForm"
+        (ngSubmit)="onSubmit(loginForm.value)"
+        class="form"
+      >
+        <h4>Login</h4>
+        <mat-form-field floatLabel="" class="form-element">
+          <input type="text" matInput placeholder="Eid" formControlName="eid" />
+          <mat-error *ngIf="loginForm.controls['eid'].invalid">
+            {{ getError("user") }}
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field floatLabel="" class="form-element">
+          <input
+            type="password"
+            matInput
+            placeholder="Password"
+            formControlName="password"
+          />
+          <mat-error *ngIf="!loginForm.controls['password'].valid">
+            {{ getError("pass") }}
+          </mat-error>
+        </mat-form-field>
+
+        <div>
+          <Button
+            type="submit"
+            class="btn btn-primary"
+            [disabled]="!loginForm.valid"
+            >Login</Button
+          >
+          <p class="error"></p>
+        </div>
+        <mat-error *ngIf="error | async">
+            Error logging in
+        </mat-error>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "authentication": [
+    {
+      "id": "user1",
+      "isAuthenticated": true
+    }
+  ],
+  "dashboard": {
+    "role": "ADMIN",
+    "eid": "dsaho464",
+    "message": "success",
+    "propertyConversion": [
+      {
+        "marsha_code": "Satya",
+        "goLiveDate": "29-10-2019",
+        "startedDate": ""
+      },
+      {
+        "marsha_code": "Debesh",
+        "goLiveDate": "28-10-2019",
+        "startedDate": ""
+      }
+    ]
+  }
+}

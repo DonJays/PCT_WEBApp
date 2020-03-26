@@ -1,0 +1,46 @@
+.initiateprop {
+    position: relative;
+    top: 100px;
+    left: 50px;
+    /* border: 1px solid; */
+    width: 170px;
+    border-radius: 10px;
+    height: 150px;
+    background: #ffffff;
+    cursor:pointer;
+}
+
+p {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+.fas.fa-plus {
+    color:#A32236;
+    font-size: 30px;
+}
+
+label {
+    display: block;
+}
+
+.container-fluid {
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.mat-form-field {
+    width: 425px;
+}
+
+/* Input Percentage Code Starts*/
+// .input-group {
+//     width:7%;
+// }
+.input-group input {
+    padding-right: 0;
+}
+.input-group-text {
+    padding-left: 0;
+}
+/* Input Percentage Code Ends*/

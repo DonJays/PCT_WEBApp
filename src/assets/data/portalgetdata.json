@@ -1,0 +1,20 @@
+{
+    "doc_type": "common",
+    "marsha_code": "DDDDD",
+    "golive_date": "2019-10-30",
+    "common_data": [],
+    "portal_questions": [
+        {
+            "pms_sys": "FOSSE",
+            "ems_active": "Opera",
+            "opera_ver": 5.5,
+            "fspms_lightspeed_active": "Lightspeed",
+            "mbs_credit_active": "yes",
+            "btr_active": "yes",
+            "mhgl_active": "no",
+            "active": false,
+            "create_date": ""
+        }
+    ],
+    "create_date": "2019-10-29"
+}

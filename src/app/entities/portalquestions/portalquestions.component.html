@@ -1,0 +1,192 @@
+<app-sidenavbar></app-sidenavbar>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="text-left">
+                <h5>Portal Questions</h5>
+                <p class="text-left">Description:These are the questions from various worksheets that we would like
+                    listed in the "Portal" type portion to fill out and then these should calculate as needed and
+                    populate
+                    the "Tool" with the appropriate information in applicable areas throughout.’</p>
+            </div>
+            <form [formGroup]="portalqstns" class="col-4">
+                <div class="form-group">
+                    <label>1. What is your Property MARSHA Code?</label>
+                    <input type="text" class="form-control" name="marshacode" formControlName="marshacode"
+                        placeholder="MARSHA CODE">
+                </div>
+                <div class="form-group">
+                    <label>2. What is your System Go Live Date?</label>
+                    <input type="date" class="form-control" name="golivedate" formControlName="golivedate"
+                        placeholder="MM/DD/YY">
+                </div>
+                <div class="form-group">
+                    <label>3. What Property Management System (PMS) do you use?</label>
+                    <!--<select name="pms" formControlName="pms" class="form-control">
+            <option>Fidelio</option>
+            <option value="FOSSE">FOSSE</option>
+            <option value="FSPMS">FSPMS</option>
+            <option value="LightSpeed">LightSpeed</option>
+            <option value="Opera">Opera</option>
+            <option value="Conversion">Conversion</option>
+          </select> -->
+                    <mat-form-field>
+                        <mat-select name="pms" formControlName="pms">
+                            <mat-option value="Fidelio">Fidelio</mat-option>
+                            <mat-option value="FOSSE">FOSSE</mat-option>
+                            <mat-option value="FSPMS">FSPMS</mat-option>
+                            <mat-option value="LightSpeed">LightSpeed</mat-option>
+                            <mat-option value="Opera">Opera</mat-option>
+                            <mat-option value="Conversion">Conversion</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <label>4. EMS Active </label>
+                    <!--<select id="ems" name="ems" formControlName="ems" class="form-control">
+            <option value="Delphi">Delphi</option>
+            <option value="Opera">Opera</option>
+            <option value="Other">Other</option>
+          </select> -->
+
+                    <mat-form-field>
+                        <mat-select id="ems" name="ems" formControlName="ems">
+                            <mat-option value="Delphi">Delphi</mat-option>
+                            <mat-option value="Opera">Opera</mat-option>
+                            <mat-option value="Other">Other</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <label>5. Opera Version?</label>
+                    <!--<select id="operaversion" name="operaversion" formControlName="operaversion" class="form-control">
+            <option value="5.4">5.4</option>
+            <option value="5.5">5.5</option>
+            <option value="5.6">5.6</option>
+          </select> -->
+
+                    <mat-form-field>
+                        <mat-select id="operaversion" name="operaversion" formControlName="operaversion">
+                            <mat-option value="5.4">5.4</mat-option>
+                            <mat-option value="5.5">5.5</mat-option>
+                            <mat-option value="5.6">5.6</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <label>6. Which PMS system is active for your Property?</label>
+                </div>
+                <div class="form-group form-check form-check-inline">
+                    <!-- <mat-radio-group aria-label="Select an Option" name="fspms" formControlName="fspms">
+            <mat-radio-button value="Yes">Yes</mat-radio-button>
+            <mat-radio-button value="No">No</mat-radio-button>
+          </mat-radio-group> -->
+
+                    <input class="form-check-input" type="radio" id="fspms" name="fspms" formControlName="fspms"
+                        value="FSPMS">
+                    <label class="form-check-label" for="fspms">
+                        FSPMS
+                    </label>
+                </div>
+                <div class="form-group form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="lightspeed" name="fspms" formControlName="fspms"
+                        value="Lightspeed">
+                    <label class="form-check-label" for="lightspeed">
+                        Lightspeed
+                    </label>
+                </div>
+                <div class="form-group form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="fspmsnone" name="fspms" formControlName="fspms"
+                        value="None/Other">
+                    <label class="form-check-label" for="fspmsnone">
+                        None/Other
+                    </label>
+                </div>
+
+                <!-- <div class="form-group">
+          <label>7. Is your Property active on LightSpeed?</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="lightspeed" id="lightspeedyes" formControlName="lightspeed"
+            value="yes">
+          <label class="form-check-label" for="lightspeedyes">
+            Yes
+          </label>
+        </div>
+        <div class="form-group form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="lightspeed" id="lightspeedno" formControlName="lightspeed"
+            value="no">
+          <label class="form-check-label" for="lightspeedno">
+            No
+          </label>
+        </div> -->
+
+                <div class="form-group">
+                    <label>7. Is your Property MBS Credit Active?</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mbs" id="mbsyes" formControlName="mbs"
+                        value="yes">
+                    <label class="form-check-label" for="mbsyes">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-group form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mbs" id="mbsno" formControlName="mbs" value="no">
+                    <label class="form-check-label" for="mbsno">
+                        No
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>8. Does your property have the BTR (Business Transaction Repository) Interface?</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="btr" id="btryes" formControlName="btr"
+                        value="yes">
+                    <label class="form-check-label" for="btryes">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-group form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="btr" id="btrno" formControlName="btr" value="no">
+                    <label class="form-check-label" for="btrno">
+                        No
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>9. Does your property have the MGL/RCSL Interface?</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mgl" id="mglyes" formControlName="mgl"
+                        value="yes">
+                    <label class="form-check-label" for="mglyes">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-group form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mgl" id="mglno" formControlName="mgl" value="no">
+                    <label class="form-check-label" for="mglno">
+                        No
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>10. What is the Percentage of Future Rate Accelerator?</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="futurerate" class="form-control brdrrgt0" aria-label="Percentage"
+                        value={{this.futurerate}} (keypress)="isNumber(event)">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="inputGroupAppend">%</span>
+                    </div>
+                </div>
+                <div class="col-12 text-right">
+                    <p><button type="button" class="btn btn-primary" (click)="submit(portalqstns)">Submit</button></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

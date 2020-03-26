@@ -1,0 +1,335 @@
+/* You can add global styles to this file, and also import other style files */
+
+// @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #f8f8f8;
+}
+
+@font-face {
+  font-family: IBMPlexSans-Bold;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSans-BoldItalic;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSans-ExtraLight;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSans-ExtraLightItalic;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLightItalic.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSans-Italic;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSans-Light;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSans-LightItalic;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSans-Medium;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSans-MediumItalic;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSans-Regular;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSans-SemiBold;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSans-SemiBoldItalic;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-SemiBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSans-Thin;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Thin.ttf);
+}
+
+@font-face {
+  font-family: IBMPlexSans-ThinItalic;
+  src: url(../src/assets/fonts/IBM_Plex_Sans/IBMPlexSans-ThinItalic.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Black;
+  src: url(../src/assets/fonts/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: Roboto-BlackItalic;
+  src: url(../src/assets/fonts/Roboto/Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../src/assets/fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto-BoldItalic;
+  src: url(../src/assets/fonts/Roboto/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Italic;
+  src: url(../src/assets/fonts/Roboto/Roboto-Italic.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../src/assets/fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: Roboto-LightItalic;
+  src: url(../src/assets/fonts/Roboto/Roboto-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../src/assets/fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: Roboto-MediumItalic;
+  src: url(../src/assets/fonts/Roboto/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../src/assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto-Thin;
+  src: url(../src/assets/fonts/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+  font-family: Roboto-ThinItalic;
+  src: url(../src/assets/fonts/Roboto/Roboto-ThinItalic.ttf);
+}
+
+h3 {
+  font-family: Roboto-Bold;
+}
+
+h5,
+h6,
+ul li {
+  font-family: Roboto-Medium;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+input {
+  color: red;
+}
+
+.btn-primary {
+  background: #a32236;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  /*padding: 0.5% 2%;*/
+}
+.btn-primary:hover,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #464646;
+  border: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: none;
+}
+.mrgn_tp10 {
+  margin-top: 10px;
+}
+.mrgn_tp20 {
+  margin-top: 20px;
+}
+.mrgn_tp30p {
+  margin-top: 30px;
+}
+.mrgn_rgt15 {
+  margin-right: 15px;
+}
+.mrgn_rgt19 {
+  margin-right: 19px;
+}
+.mrgn_lft10 {
+  margin-left: 10px;
+}
+.mrgn_lft100 {
+  margin-left: 100px;
+}
+.pdtp7 {
+  padding-top: 7px;
+}
+.pdtp105 {
+  padding-top: 105px;
+}
+.mat-form-field-appearance-legacy .mat-form-field-infix {
+  /* width:140px; */
+}
+
+#sleepingroomtypes .mat-form-field-appearance-legacy .mat-form-field-infix {
+  width: 142px;
+}
+#sleepingroomtypes
+  .mat-form-field-appearance-legacy
+  .mat-form-field-infix:nth-child(5) {
+  width: 100px;
+}
+.wdth50 {
+  width: 50px;
+}
+
+.wid92pt {
+  width: 92%;
+}
+
+.brdrrgt0 {
+  border-right: none;
+}
+.brdrlft0 {
+  border-left: none;
+}
+.container-fluid {
+  background: #f8f8f8;
+}
+
+.dsply_blck {
+  display: block;
+}
+
+.error {
+  color: red;
+}
+.table {
+  margin-top: 20px;
+  overflow-y: auto;
+  background: white;
+  /*box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.30);*/
+  border-collapse: inherit;
+  border: 1px solid #dee2e6;
+  border-radius: 15px;
+}
+
+.table-hover tbody tr {
+  border-radius: 5px;
+}
+.table-hover tbody tr:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  /*border: 1px solid #e8e8e8;*/
+}
+.table th {
+  font-family: Roboto-Medium;
+  font-size: 14px;
+  color: #343434;
+  /* width:150px; */
+}
+
+.table td {
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  color: #000000;
+}
+.table-bordered td,
+.table-bordered th {
+  border-radius: 5px;
+}
+.table thead th {
+  border-bottom: none;
+  border-top: none;
+}
+.mat-pseudo-checkbox {
+  opacity: 0;
+}
+.mat-option:focus:not(.mat-option-disabled),
+.mat-option:hover:not(.mat-option-disabled) {
+  background: #a32236;
+  color: #ffffff;
+}
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+  color: #ffffff;
+  background: #a32236;
+  /*background:#464646;*/
+}
+
+.modal {
+  overflow-y: auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.table-bordered {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+#sleepingroomtypes ul,
+#functionroomtypes ul {
+  float: left;
+}
+
+#sleepingroomtypes .col-md-12,
+#sleepingroomtypes ul,
+#functionroomtypes .col-md-12,
+#functionroomtypes ul {
+  padding-left: 0;
+}
+
+.input-group-text {
+  background: #fff;
+}
+
+.form-control:focus {
+  border-color: #ced4da;
+  box-shadow: none;
+}
